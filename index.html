@@ -66,7 +66,7 @@
         font-weight: 550;
       }
       .menu li:hover a {
-        color: var(--slightcolor);
+        transform: scale(1.08);
       }
       .menu li a::after {
         content: "";
@@ -84,9 +84,9 @@
       .open-menu,
       .close-menu {
         position: absolute;
-        color: var(--white-color);
+        color: var(--black-color);
         cursor: pointer;
-        font-size: 1.5rem;
+        font-size: 2rem;
         display: none;
       }
       .open-menu {
@@ -95,39 +95,11 @@
         transform: translateY(-50%);
       }
       .close-menu {
-        top: 10px;
+        top: 16px;
         right: 25px;
       }
       #check {
         display: none;
-      }
-      @media (max-width: 610px) {
-        .menu {
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          width: 80%;
-          height: 100vh;
-          position: fixed;
-          top: 0;
-          right: -100%;
-          z-index: 1000;
-          background-color: var(--black-color);
-          transition: all 0.2s ease-in-out;
-        }
-        .menu li {
-          margin-top: 40px;
-        }
-        .menu li a {
-          padding: 0px;
-        }
-        .open-menu,
-        .close-menu {
-          display: block;
-        }
-        #check:checked ~ .menu {
-          right: 0;
-        }
       }
 
       .header {
@@ -208,29 +180,47 @@
       /* --------------- media quary --------------------------------- */
       @media (max-width: 610px) {
         .menu {
-
+          color: var(--white-color) !important;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          width: 80%;
+          width: 100%;
           height: 100vh;
           position: fixed;
           top: 0;
           right: -100%;
           z-index: 1000;
-          background-color: var(--black-color);
-          transition: all 0.2s ease-in-out;
+          /* background-color: var(--black-color); */
+          background-image: linear-gradient(
+            -225deg,
+            rgb(249, 249, 249) 0%,
+            var(--primary-color) 100%
+          );
+          transition: all 0.4s ease-in-out;
+        }
+        .menu li {
+          margin-top: 40px;
+        }
+        .menu li a {
+          padding: 0px;
+        }
+        .open-menu,
+        .close-menu {
+          display: block;
+        }
+        #check:checked ~ .menu {
+          right: 0;
         }
       }
       @media screen and (max-width: 769px) {
         /* .menu {
           font-size: 9px;
-        }
-      } */
-      @media screen and (max-width: 426px) {
-        /* h1 {
-          font-size: 30px !important;
         } */
+      }
+      @media screen and (max-width: 325px) {
+        /* .menu {
+            color: #f7f7f7 !important;
+          } */
       }
     </style>
   </head>
@@ -260,7 +250,7 @@
 
     <!-- Header with Video -->
     <header class="header">
-      <div class="video-fullscreen-wrap bg-danger" data-overlay-dark="5">
+      <div class="video-fullscreen-wrap" data-overlay-dark="5">
         <video class="video-fullscreen-video" playsinline autoplay loop muted>
           <source src="/videos/AdobeStock_432387493.mov" type="video/webm" />
           <source src="/videos/AdobeStock_432387493.mov" type="video/webm" />
@@ -292,6 +282,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         const navbar = document.querySelector(".nav-bar");
         const menuItems = document.querySelectorAll(".nav-bar .menu li a");
+        const menuIcon = document.querySelectorAll(".fa-bars");
         const scrollThreshold = 50; // Adjust this value as needed
 
         window.addEventListener("scroll", function () {
@@ -300,10 +291,16 @@
             menuItems.forEach((item) => {
               item.style.color = "var(--black-color)"; // Change menu item color
             });
+            menuIcon.forEach((icon) => {
+              icon.style.color = "var(--black-color)"; // Change menu icon color
+            });
           } else {
             navbar.style.backgroundColor = "transparent";
             menuItems.forEach((item) => {
               item.style.color = "var(--white-color)"; // Default color or adjust as needed
+            });
+            menuIcon.forEach((icon) => {
+              icon.style.color = "var(--white-color)"; // Default color or adjust as needed
             });
           }
         });
