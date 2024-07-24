@@ -224,6 +224,87 @@
     .section-title {
         font-size: 30px;
     }
+  
+}
+@media screen and (max-width: 769px) {
+    .section-title {
+        font-size: 30px;
+    }
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        height: 468px !important;
+        overflow: hidden;
+        padding: 10px;
+        z-index: 10;
+      }
+  
+}
+@media screen and (max-width: 426px) {
+    
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        height: 510px !important;
+        overflow: hidden;
+        padding: 10px;
+        z-index: 10;
+      }
+  
+}
+@media screen and (max-width: 431px) {
+    
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        height: 530px !important;
+        overflow: hidden;
+        padding: 10px;
+        z-index: 10;
+      }
+  
+}
+@media screen and (max-width: 391px) {
+    
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        height: 480px !important;
+        overflow: hidden;
+        padding: 10px;
+        z-index: 10;
+      }
+  
+}
+@media screen and (max-width: 376px) {
+    
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        height: 465px !important;
+        overflow: hidden;
+        padding: 10px;
+        z-index: 10;
+      }
+  
+}
+@media screen and (max-width: 321px) {
+    
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        height: 393px !important;
+        overflow: hidden;
+        padding: 10px;
+        z-index: 10;
+      }
+  
 }
 
 
@@ -253,7 +334,7 @@
 
 }
 /* title */
-.title {
+.work-place-title {
     position: absolute;
     bottom: 20px;
     padding: 0;
@@ -460,7 +541,7 @@ h6 {
         position: relative;
         width: 100%;
         max-width: 1000px;
-        height: 430px;
+        height: 402px;
         overflow: hidden;
         padding: 10px;
         z-index: 10;
@@ -472,7 +553,7 @@ h6 {
       }
 
       .swiper-slide {
-        border-radius: 10px;
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -484,10 +565,19 @@ h6 {
       }
 
       .swiper-slide img {
-      border-radius: 10px;
+      /* border-radius: 10px;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: cover; */
+
+        /* position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 20px;
+    width: 100%;
+    transform: scale(1);
+    transition: transform 500ms ease; */
       }
 
       .slide-content {
@@ -496,7 +586,7 @@ h6 {
         left: 20px;
         color: #fff;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 20px !important;
       }
 
       .slide-content h3 {
@@ -519,11 +609,491 @@ h6 {
 
       .swiper-pagination {
         position: absolute;
-        bottom: 10px !important;
+        bottom: -5px !important;
         left: 50% !important;
         transform: translateX(-50%);
         z-index: 20;
       }
+
+      .bottom-fade {
+            width: 100%;
+    top: 0;
+    height: 100%;
+    float: left;
+    position: absolute;
+    /* background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.738) 19%, rgba(0, 0, 0, 0.541) 34%, rgba(0, 0, 0, 0.382) 47%, rgba(0, 0, 0, 0.278) 56.5%, rgba(0, 0, 0, 0.194) 65%, rgba(0, 0, 0, 0.126) 73%, rgba(0, 0, 0, 0.075) 80.2%, rgba(0, 0, 0, 0.042) 86.1%, rgba(0, 0, 0, 0.021) 91%, rgba(0, 0, 0, 0.008) 95.2%, rgba(0, 0, 0, 0.002) 98.2%, transparent 100%); */
+    z-index: 0;
+    border-radius: 20px 20px 0 20px;
+      }
+      .swiper-slide .con{
+        box-sizing: border-box;
+    position: relative !important;
+    z-index: 2 !important;
+    opacity: 0;
+    border-radius: 20px !important;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+}
+      .swiper-slide .img{
+        position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 20px;
+    width: 100%;
+    transform: scale(1);
+    transition: transform 500ms ease;
+      }
+      .swiper-slide .img img{
+        display: block;
+        width: 100%;
+      }
+      .swiper-slide {
+        
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+.bottom-fade {
+ 
+    z-index: 1 !important;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    float: left;
+    position: absolute;
+    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.738) 19%, rgba(54, 54, 54, 0.541) 34%, rgba(40, 40, 40, 0.382) 47%, rgba(70, 70, 70, 0.278) 56.5%, rgba(62, 62, 62, 0.194) 65%, rgba(93, 93, 93, 0.126) 73%, rgba(0, 0, 0, 0.075) 80.2%, rgba(121, 121, 121, 0.042) 86.1%, rgba(79, 78, 78, 0.021) 91%, rgba(30, 29, 29, 0.008) 95.2%, rgba(255, 255, 255, 0) 98.2%, transparent 100%);
+    z-index: 0;
+    border-radius: 20px 20px 0 20px;
+}
+ .con .title {
+    position: absolute;
+    bottom: 0px;
+    padding: 20px 90px 20px 20px;
+    width: 100%;
+}
+.swiper-slide .con .icon{
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px !important;
+    background: #fff;
+    border-top-left-radius: 50%;
+    padding: 15px;
+}
+.con .icon .arrow {
+    position: absolute;
+    background:var(--primary-color) !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+
+/* ----------------- */
+.swiper-slide .img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 20px;
+    width: 100%;
+    transform: scale(1);
+    /* transition: transform 500ms ease;
+     */
+     transition: all 1s ease-in-out !important;
+}
+.swiper-slide:hover .img img {
+    transform: scale(1.05);
+}
+.swiper-slide .con {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+}
+.swiper-slide .con.opacity-1 { 
+    opacity: 0;
+}
+.swiper-slide .con.active {
+    visibility: visible;
+    opacity: 1;
+}
+/* arrow */
+.swiper-slide .con .arrow {
+    position: relative;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    text-align: -webkit-right;
+    transform: rotate(0);
+    -webkit-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+    transition: all 0.7s linear;
+}
+.swiper-slide .con .arrow a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #c5a47e;
+    background: #c5a47e;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    transition: all 0.5s ease-in-out !important
+}
+.swiper-slide:hover .con .arrow a {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+    transition: all 0.7s linear;
+}
+/* title */
+.swiper-slide .con .title {
+    position: absolute;
+    bottom: 0px;
+    padding: 30px 100px 30px 30px;
+    width: 100%;
+}
+.swiper-slide .con .title h6 {
+    font-family: "Noah", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px !important;
+    margin-bottom: 0;
+}
+.swiper-slide .con .title h4 {
+color: #fff;
+    font-size: 17px;;
+    margin-bottom: 0;
+}
+.swiper-slide .con .title h3 {
+color: #fff;
+    font-size: 24px;;
+    margin-bottom: 0;
+    line-height: 1.25em;
+}
+ 
+ .swiper-slide .con .icon {
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background: #fff;
+    border-top-left-radius: 50%;
+    padding: 15px;
+    transition: all 0.5s ease-in-out !important
+}
+ .swiper-slide:hover .con .icon .arrow {
+  transform: scale(1.05);
+}
+ .swiper-slide .con .icon::before {
+position: absolute;
+    content: "";
+    bottom: 6px;
+    left: -20px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 6px 6px 0 6px #fff;
+}
+ .swiper-slide .con .icon::after {
+    position: absolute;
+    content: "";
+    top: -20px;
+    right: 6px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 6px 6px 0 6px #fff;
+}
+ .swiper-slide .con .icon .arrow {
+    position: absolute;
+    background: #c5a47e;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s ease-in-out !important;
+    line-height: 60px;
+}
+ .swiper-slide:hover .con .icon .arrow {
+    color: #fff;
+    background: #1b1b1b;
+}
+/* owl nav */
+ .owl-.swiper-slide.active .swiper-slide .con {
+    visibility: visible;
+    opacity: 1;
+}
+ .owl-theme .owl-nav {
+    position: absolute !important;
+    top: 45% !important;
+    bottom: auto !important;
+    width: 100%
+}
+ .owl-theme .owl-nav {
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+ .owl-theme .owl-prev,
+ .owl-theme .owl-prev {
+    left: 10px !important
+}
+ .owl-theme .owl-next {
+    right: 10px !important
+}
+ .owl-theme .owl-prev,
+ .owl-theme .owl-next {
+    color: #fff;
+    position: absolute !important;
+    top: 50%;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    line-height: 0;
+    text-align: center;
+    font-size: 15px
+}
+ .owl-theme .owl-prev > span,
+ .owl-theme .owl-next > span {
+    position: absolute;
+    line-height: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+ .owl-carousel .owl-nav button.owl-next,
+ .owl-carousel .owl-nav button.owl-prev {
+    outline: none;
+}
+ .owl-theme .owl-nav [class*=owl-] {
+    width: 55px;
+    height: 55px;
+    line-height: 58px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 100%;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.0);
+}
+ .owl-theme .owl-nav [class*=owl-]:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #1b1b1b;
+}
+ .owl-theme .owl-nav {
+    top: 40% !important;
+}
+ .owl-theme .owl-nav [class*=owl-] {
+    opacity: 0;
+}
+ .owl-theme:hover .owl-nav [class*=owl-] {
+    opacity: 1;
+}
+
+
+ .swiper-slide {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+
+}
+/* img */
+ .swiper-slide .img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 20px;
+    width: 100%;
+    transform: scale(1);
+    /* transition: transform 500ms ease; */
+    transition: all 0.5s ease-in-out !important
+}
+ .swiper-slide:hover .img img {
+    transform: scale(1.05);
+}
+ .swiper-slide .con {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+}
+ .swiper-slide .con.opacity-1 { 
+    opacity: 0;
+}
+ .swiper-slide .con.active {
+    visibility: visible;
+    opacity: 1;
+}
+/* arrow */
+ .swiper-slide .con .arrow {
+    position: relative;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    text-align: -webkit-right;
+    transform: rotate(0);
+    -webkit-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+    transition: all 0.7s linear;
+}
+ .swiper-slide .con .arrow a {
+  text-decoration: none !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    transition: all 0.5s ease-in-out !important;
+}
+ .swiper-slide:hover .con .arrow a {
+  text-decoration: none !important;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+    transition: all 0.7s linear;
+}
+/* title */
+ .swiper-slide .con .title {
+    position: absolute;
+    bottom: 0px;
+    padding: 20px 90px 20px 20px;
+    width: 100%;
+}
+ .swiper-slide .con .title h6 {
+    font-family: "Noah", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+ .swiper-slide .con .title h4 {
+color: #fff;
+    font-size: 21px;;
+    margin-bottom: 0;
+}
+ .swiper-slide .con .title h3 {
+color: #fff;
+    font-size: 24px;;
+    margin-bottom: 0;
+}
+/* icon */
+ .swiper-slide .con .icon {
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background: #fff;
+    border-top-left-radius: 50%;
+    padding: 15px;
+    transition: all 0.5s ease-in-out !important;
+}
+ .swiper-slide:hover .con .icon .arrow {
+  transform: scale(1.05)  !important;
+}
+ .swiper-slide .con .icon::before {
+position: absolute;
+    content: "";
+    bottom: 6px;
+    left: -20px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 6px 6px 0 6px #fff;
+}
+ .swiper-slide .con .icon::after {
+    position: absolute !important;
+    content: "";
+    top: -20px;
+    right: 6px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 6px 6px 0 6px #fff;
+}
+ .swiper-slide .con .icon .arrow {
+    position: absolute !important;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+ .swiper-slide:hover .con .icon .arrow {
+    color: #fff;
+    background: #1b1b1b;
+}
+
 
     </style>
   </head>
@@ -612,7 +1182,7 @@ h6 {
                       
                       <!-- <div class="icon"> <a href="https://www.youtube.com/watch?v=Tqoe_nDx3ps" class="vid arrow "><i class="fa fa-play text-decoration-none text-white"></i></a> </div> -->
                       <div class="icon"><a href="" class="vid arrow"><i class="fa-solid fa-arrow-trend-up text-white fs-5"></i></a> </div>
-                      <div class="title">
+                      <div class="work-place-title">
                           <h4>Work spece</h4>
                       </div>
                   </div>
@@ -633,45 +1203,76 @@ h6 {
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="images/1.jpg" alt="Image 1" />
-            <div class="slide-content">
-              <h3>Title 1</h3>
-              <p>Description for image 1.</p>
-              <a href="#">See More</a>
+            <div class="img"> <img src="images/1.jpg" alt=""> </div>
+            <div class="bottom-fade"></div>
+            <div class="con active">
+                <div class="title text-start">
+                    <h4 class="fs-6">Modern Art Museum</h4>
+                    <h6 class="fs-6"><span class="fa fa-location"></span> Chennai</h6>
+                </div>
+                <div class="icon">
+                    <a href="" class="arrow"> 
+                      <i class="fa fa-arrow-trend-up"></i> </a>
+                </div>
             </div>
-          </div>
+        </div>
           <div class="swiper-slide">
-            <img src="images/1.jpg" alt="Image 2" />
-            <div class="slide-content">
-              <h3>Title 2</h3>
-              <p>Description for image 2.</p>
-              <a href="#">See More</a>
+            <div class="img"> <img src="images/1.jpg" alt=""> </div>
+            <div class="bottom-fade"></div>
+            <div class="con active">
+                <div class="title text-start">
+                    <h4 class="fs-6">Modern Art Museum</h4>
+                    <h6 class="fs-6"><span class="fa fa-location"></span> Chennai</h6>
+                </div>
+                <div class="icon">
+                    <a href="" class="arrow "> 
+                      <i class="fa fa-arrow-trend-up"></i> </a>
+                </div>
             </div>
-          </div>
+        </div>
           <div class="swiper-slide">
-            <img src="images/1.jpg" alt="Image 3" />
-            <div class="slide-content">
-              <h3>Title 3</h3>
-              <p>Description for image 3.</p>
-              <a href="#">See More</a>
+            <div class="img"> <img src="images/1.jpg" alt=""> </div>
+            <div class="bottom-fade"></div>
+            <div class="con active">
+                <div class="title text-start">
+                    <h4 class="fs-6">Modern Art Museum</h4>
+                    <h6 class="fs-6"><span class="fa fa-location"></span> Chennai</h6>
+                </div>
+                <div class="icon">
+                    <a href="" class="arrow"> 
+                      <i class="fa fa-arrow-trend-up"></i> </a>
+                </div>
             </div>
-          </div>
+        </div>
           <div class="swiper-slide">
-            <img src="images/1.jpg" alt="Image 4" />
-            <div class="slide-content">
-              <h3>Title 4</h3>
-              <p>Description for image 4.</p>
-              <a href="#">See More</a>
+            <div class="img"> <img src="images/1.jpg" alt=""> </div>
+            <div class="bottom-fade"></div>
+            <div class="con active">
+                <div class="title text-start">
+                    <h4 class="fs-6">Modern Art Museum</h4>
+                    <h6 class="fs-6"><span class="fa fa-location"></span> Chennai</h6>
+                </div>
+                <div class="icon">
+                    <a href="" class="arrow"> 
+                      <i class="fa fa-arrow-trend-up"></i> </a>
+                </div>
             </div>
-          </div>
+        </div>
           <div class="swiper-slide">
-            <img src="images/1.jpg" alt="Image 4" />
-            <div class="slide-content">
-              <h3>Title 5</h3>
-              <p>Description for image 4.</p>
-              <a href="#">See More</a>
+            <div class="img"> <img src="images/1.jpg" alt=""> </div>
+            <div class="bottom-fade"></div>
+            <div class="con active">
+                <div class="title text-start">
+                    <h4 class="fs-6">Modern Art Museum</h4>
+                    <h6 class="fs-6"><span class="fa fa-location"></span> Chennai</h6>
+                </div>
+                <div class="icon">
+                    <a href="" class="arrow"> 
+                      <i class="fa fa-arrow-trend-up"></i> </a>
+                </div>
             </div>
-          </div>
+        </div>
+          
         </div>
         <!-- Add Pagination --> 
         <div class="swiper-pagination "></div>
