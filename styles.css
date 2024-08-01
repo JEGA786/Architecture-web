@@ -26,6 +26,13 @@
     background-color: transparent;
     transition: background-color 0.3s ease; 
   }
+  .call{
+    background:var(--primary-color);
+    height: 30px;
+    padding: 10px !important;
+    padding-left: 10px !important;
+    border-radius: 15px;
+  }
   .logo img {
     width: 170px;
   }
@@ -254,12 +261,18 @@ color: #fff;
   }
   .wrapper .icon {
    
-    padding: 15px;
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
+    padding: 15px !important;
+    margin: 10px !important;
+    width: 40px !important ;
+    height: 40px !important;
+    font-size: 18px !important;
     
+  }
+
+  .about-top{
+    background-image: url(/images/about\ top-mbile.png);
+    height: 75vh;
+    background-size: cover;
   }
 
 }
@@ -1088,4 +1101,321 @@ line-height: 60px;
 .swiper-slide:hover .con .icon .arrow {
 color: #fff;
 background: #1b1b1b;
+}
+/* ----------------OUR CHOOSE WHY------------------------ */
+p{
+  font-size: 15px;
+}
+
+.video-wrapper {
+position: relative;
+width: 100%;
+height: 60vh; 
+display: flex;
+align-items: center; 
+justify-content: center; 
+text-align: center;
+z-index: -100; 
+overflow: hidden;
+}
+
+.video-background {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+z-index: -1; 
+}
+
+.video-background-video {
+width: 100%;
+height: 100%;
+object-fit: cover; 
+}
+
+.container {
+position: relative;
+z-index: 1;
+height : 100% ;
+}
+
+.section-subtitle,
+.section-title {
+margin-bottom: 20px;
+}
+.button-1 {
+display: inline-block;
+padding: 10px 20px;
+font-size: 1rem;
+color: #fff;
+background-color: var(--primary-color);
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+.button-1:hover {
+background-color: var(--slightcolor);
+color: var(--black-color);
+}
+/* --------------------Our Achievements
+----------------------------------- */
+.Achievements-container{
+position: relative !important;
+bottom: 50px;
+
+}
+.container-custom {
+  background-color:var(--slightcolor);
+  border-bottom: 10px solid var(--primary-color);
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.container-custom i {
+  color: var(--primary-color);
+  font-size: 2.5em;
+}
+.num {
+  font-weight: 600;
+  font-size: 3em;
+}
+.text {
+  /* color: #e0e0e0; */
+  font-weight: 550;
+  font-size: 15px;
+}
+
+/* -----------------------Clients------------------------------- */
+.Clients-swiper-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  min-height: 350px !important;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  /* padding: 20px; */
+}
+
+.Clients-swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+  /* background: #f15252; */
+}
+
+.Clients-swiper-slide img {
+  width: 100%;
+  height: 340px;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+.Clients-swiper-pagination {
+  position: absolute;
+  bottom:-5px !important;
+  left: 50% !important;
+  transform: translateX(-2.5%);
+  z-index: 10 !important;
+  /* width: 100%; */
+  /* background: #000; */
+}
+
+.Clients-swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.8;
+  transition:all 0.3s ease;
+}
+
+
+
+
+/* -------fotter--------------- */
+.footer {
+background-color: #343a40;
+color: #ffffff;
+padding: 40px 0;
+min-height: 400px;
+}
+.footer .logo img {
+width: 200px;
+}
+.footer p {
+margin: 10px 0;
+}
+footer h5{
+color: var(--primary-color);
+} 
+.footer .social-icons {
+display: flex;
+justify-content: start !important;
+padding: 0;
+}
+.footer .social-icons li  {
+list-style: none;
+}
+.list-footer{
+list-style: none !important;
+}
+.list-footer a{
+text-decoration: none ;
+margin-top: 10px !important;
+transition: all 0.5 ease-in-out;
+}
+.list-footer a:hover{
+color: var(--primary-color) !important;
+font-weight: 550;
+}
+
+.footer .social-icons a {
+color: #ffffff;
+/* margin: 0 10px; */
+font-size: 20px;
+transition: color 0.3s;
+}
+
+/* .footer .social-icons a:hover {
+color: #18f98f;
+} */
+.wrapper .icon {
+position: relative;
+background: #ffffff18;
+border-radius: 50%;
+padding: 15px;
+margin: 10px;
+width: 50px;
+height: 50px;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip {
+position: absolute;
+top: 0;
+font-size: 14px;
+background: #ffffff;
+color: #ffffff;
+padding: 5px 8px;
+border-radius: 5px;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+opacity: 0;
+pointer-events: none;
+transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+position: absolute;
+content: "";
+height: 8px;
+width: 8px;
+background: #ffffff;
+bottom: -3px;
+left: 50%;
+transform: translate(-50%) rotate(45deg);
+transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+top: -45px;
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+background: #1877f2;
+color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+background: #1da1f2;
+color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+background: #e4405f;
+color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+background: #25D366;
+color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+background: #cd201f;
+color: #ffffff;
+}
+hr{
+margin-top: 50px !important;
+}
+.rights-text{
+font-size: 13px;
+letter-spacing: 0.9px;
+}
+.footer-contact i{
+color:var(--primary-color);
+}
+
+/* ----------------service------------ */
+.service-swiper-container {
+  /* width: 100%; */
+  /* max-width: 1200px; */
+  height: 100% !important;
+  /* height: 350px !important; */
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+
+}
+.service-swiper-slide {
+  background:rgb(255, 255, 255);
+  min-height: 390px !important;
+  height: 100% !important;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.service-swiper-pagination {
+  position: absolute;
+  bottom: -5px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  z-index: 10 !important;
+}
+
+.service-swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.service-icon{
+  width: 80px;
+}
+.arrow-circle{
+  background:var(--primary-color);
+  height: 45px !important;
+  width: 45px;
+  border-radius: 100%;
 }
