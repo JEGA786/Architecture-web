@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+
+body {
+    font-family: "/helvetica",;
+    --primary-color: #67823b;
+    --black-color: #222222;
+    --white-color: #f7f7f7;
+    --slightcolor: #b9c99e;
+  }
+
+      .services-top{
+        background-image: url(/images/project-3.jpg);
+        height: 75vh;
+        background-size: cover;
+      }
+         .services-top::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 75%;
+            background: rgba(0, 0, 0, 0.288); 
+            z-index: 1;
+        }
+        .section-subtitle, .section-title {
+            position: relative;
+            z-index: 3;
+        }
+    
+        
+/* --------img--------------------------- */
+.image-section-project {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background: url("/images/project-1.jpg") no-repeat center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      .image-section-project::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.466); /* Semi-transparent black layer */
+        z-index: 1;
+      }
+      .image-section-project ul {
+        width: 80%;
+        list-style: none;
+        padding: 0;
+        z-index: 5;
+      }
+    
+      /* --------------------------------- */
+      .why-choose-img-2{
+width: 100%;
+height: 400px !important;
+        }
+        .why-choose-img-2 img{
+object-fit: contain !important;
+width: 100% !important;
+
+        }
+
+        .number-project{
+            background:var(--slightcolor);
+            width: 45px;
+            height:45px;
+            border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+        }
+       .project{
+        /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        width: 300px;
+        min-height:320px ;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+       }
+       .project:hover{
+        transform: translateY(-15px);
+        background: var(--slightcolor);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
+    }
+       .project:hover .number-project , .button-1{
+            background:var(--primary-color) !important;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+       
+        }
+      .project-name{
+        color: var(--primary-color);
+      }
+       
+        
+      
+    </style> 
+    </style>
+  </head>
+  <body>
+       <!-- Navbar -->
+       <nav>
+        <ul class="nav-bar">
+          <li class="logo">
+            <a href="#"><img src="/images/image 250.png" alt="Logo" /></a>
+          </li>
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about us/about.htm">About Us</a></li>
+            <li><a href="/services/services.htm">Services</a></li>
+            <li><a href="/whychoose/whychose.html">Why Choose Us</a></li>
+            <li><a href="/project/project.html">Projects</a></li>
+            <li><a href="/achievements/achievement.html">Our Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="d-flex justify-content-center align-items-center call mx-5"><a href="tel:+91 4362-463868"><i class="fa-solid fa-phone mx-2"></i></i>Immediate Call</a></li>
+            <label for="check" class="close-menu">
+              <i class="fas fa-times"></i>
+            </label>
+          </span>
+          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+      </nav>
+<!-- ---------------------------------------------------------------------------- -->
+<section class="services-top d-flex flex-column justify-content-center align-items-center">
+    <div class="section-subtitle mt-5">Who are you</div>
+    <div class="section-title text-white">Projects</div>
+</section>
+
+
+
+    <div class="line-vr-section"></div>
+
+    <section class="about section-padding">
+   
+        <div class="col-md-12 text-center mb-20">
+      </div>
+        <div class="container mt-2">
+            <div class="row">
+               
+                
+  
+                <div class="col-lg-5 col-md-12 offset-lg-0 ">
+                  <div class="content ">
+                      <div class="section-subtitle">Project</div>
+                      <div class="section-title">Our <span> Project</span></div>
+                      <p>UNIVERSE MEP Design & Consultant Pvt Ltd. has designed many of the largest and most technically complex projects in Singapore.</p>
+                      <p>Here are a few projects for your consultation:</p>
+                      
+                      <ul class="list-unstyled list m-0 p-0">
+                          <li class="m-0 p-0">
+                              <div class="list-text m-0 p-0">
+                                <p> <i class="fa fa-check mx-2 text-success"></i>Expertise in Large-Scale Projects</p>
+                             </div>
+                          </li>
+                          <li>
+                            
+                              <div class="list-text">
+                                 <p> <i class="fa fa-check mx-2 text-success"></i>Projects for Your Consultation</p>
+                              </div>
+                          </li>
+                          <a href="#" class="button-1 mt-2"
+                          >See More <span class="ti-arrow-top-right"></span
+                        ></a>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 offset-lg-1 col-12 mt-lg-0 mt-3">
+                <div class="why-choose-img-2 d-flex justify-content-end align-items-start"><img class=" w-100 " src="/images/project-vector.png" alt=""></div>
+                <!-- <img class="w-100" src="/images/why-choose.png" alt=""> -->
+             </div>
+            </div>
+        </div>
+      </section>
+  
+
+
+    <div class="line-vr-section"></div>
+
+    <div class="col-md-12 text-center">
+        <div class="section-subtitle">Top five</div>
+        <div class="section-title"> Projects</div>
+      </div>
+   
+      <section class="projects-container container col-12 mt-5">
+        <div class="d-flex p-0 m-0 justify-content-center gap-5 align-items-center flex-wrap">
+            <div class="project p-3 ">
+                <div class="number-project d-flex justify-content-center align-items-center fs-4 fw-bold">1</div>
+                <h5 class="mt-2 project-name">THE "M" CONDO</h5>
+      <p>
+        Type Apartment/Condu Classification Condominium
+SiteAres 80.327 sqf <br>
+Developer : Wingcharm Investment Phir Lud <br>
+Development. The M Condo <br>
+No. Of Units: 522</p>
+      <!-- <div class="arrow-circle d-flex justify-content-center align-items-center"><a class="" href="#"><i class="fa fa-arrow-trend-up text-dark"></i></a> </div> -->
+      <a href="#" class="button-1  mt-2"
+      >See More <span class="ti-arrow-top-right"> <i class="fa fa-arrow-trend-up"></i></span
+    ></a>
+    </div>
+
+    <div class="project p-3 ">
+        <div class="number-project d-flex justify-content-center align-items-center fs-4 fw-bold">2</div>
+        <h5 class="mt-2 project-name">ONE PEARL BANK</h5>
+<p>
+Type Apartment Classification: Condominium
+Site Area 82,370st <br>
+Developer: Capitaland limited <br>
+No. of storeys 19 <br>
+522 No. Of Lisits: 744</p>
+<!-- <div class="arrow-circle d-flex justify-content-center align-items-center"><a class="" href="#"><i class="fa fa-arrow-trend-up text-dark"></i></a> </div> -->
+<a href="#" class="button-1  mt-2"
+>See More <span class="ti-arrow-top-right"> <i class="fa fa-arrow-trend-up"></i></span
+></a>
+</div>
+
+<div class="project p-3 ">
+    <div class="number-project d-flex justify-content-center align-items-center fs-4 fw-bold">3</div>
+    <h5 class="mt-2 project-name">110 & 112 KILLINEY ROAD HOTEL</h5>
+<p>
+Type Hotel <br>
+SiteArna: 1,221 sqft Na of storeys 06 Development: Tristar<br>
+Na Of Rooms 115</p>
+<!-- <div class="arrow-circle d-flex justify-content-center align-items-center"><a class="" href="#"><i class="fa fa-arrow-trend-up text-dark"></i></a> </div> -->
+<a href="#" class="button-1  mt-2"
+>See More <span class="ti-arrow-top-right"> <i class="fa fa-arrow-trend-up"></i></span
+></a>
+</div>
+<div class="project p-3 ">
+    <div class="number-project d-flex justify-content-center align-items-center fs-4 fw-bold">4</div>
+    <h5 class="mt-2 project-name">JURONG PRIMARY SCHOOL</h5>
+<p>
+    Type: School <br>
+    SiteArma: 50,145 st Developer: KCB Cerstruction Pte Ltd Development. <br>
+     Ministry of Education</p>
+<!-- <div class="arrow-circle d-flex justify-content-center align-items-center"><a class="" href="#"><i class="fa fa-arrow-trend-up text-dark"></i></a> </div> -->
+<a href="#" class="button-1  mt-2"
+>See More <span class="ti-arrow-top-right"> <i class="fa fa-arrow-trend-up"></i></span
+></a>
+</div>
+<div class="project p-3 ">
+    <div class="number-project d-flex justify-content-center align-items-center fs-4 fw-bold">5</div>
+    <h5 class="mt-2 project-name">LENTOR HILLS - RESIDENCES</h5>
+<p>
+    Type Apartment Site Area: 553.395 sqf <br>
+    Developer: Lian being construction (1988) Pte Ltd <br>
+    Development. Lentar hills development Pte Ltd <br>
+    No. Of Unce 596</p>
+<!-- <div class="arrow-circle d-flex justify-content-center align-items-center"><a class="" href="#"><i class="fa fa-arrow-trend-up text-dark"></i></a> </div> -->
+<a href="#" class="button-1  mt-2"
+>See More <span class="ti-arrow-top-right"> <i class="fa fa-arrow-trend-up"></i></span
+></a>
+</div>
+</div>
+            
+        </div>
+      </section>
+
+
+
+      <div class="line-vr-section"></div>
+
+      <section class="image-section-project ">
+      
+        <ul class=" h-100 d-flex flex-column gap-3 justify-content-center align-items-start">
+          <div class="section-title mx-2">Our<span> Specialities</span></div>
+          <li><i class="fa fa-check mx-2 text-success m-0 p-0"></i> High qualified & experienced resources</li>
+          <li><i class="fa fa-check mx-2 text-success m-0 p-0"></i> Accuracy of Drawings</li>
+          <li><i class="fa fa-check mx-2 text-success m-0 p-0"></i> Expertise in latest technology & Software</li>
+          <li><i class="fa fa-check mx-2 text-success m-0 p-0"></i> Overall Efficiency</li>
+          <li><i class="fa fa-check mx-2 text-success m-0 p-0"></i> State of the art Facilities & Security</li>
+          <li><i class="fa fa-check mx-2 text-success m-0 p-0"></i> Resolution of issues at an early stage through various Analysis</li>
+          <li><i class="fa fa-check mx-2 text-success m-0 p-0"></i> Quick tumaround time</li>
+          
+        </ul>
+      </section>
+    
+ <!-- Footer -->
+ <footer class="footer ">
+    <div class="container ">
+      <div class="row d-flex justify-content-between align-items-start">
+        <!-- First div: Logo and paragraph -->
+        <div class="col-md-4 mt-4">
+          <div class="logo">
+            <img src="/images/image 250.png" alt="Logo">
+          </div>
+          <p class="mt-3 col-10">"Universe MEP Design: Exceptional quality, innovative solutions, and unmatched service."</p>
+        </div>
+        <!-- Second div: List of links -->
+        <div class="col-md-2 text-start mt-4">
+          <h5 class="fw-bold">Useful Links</h5>
+          <ul class="list-footer p-0 mt-2">
+            <li class="mt-2"><a href="#" class="text-white">Home</a></li>
+            <li class="mt-2"><a href="#" class="text-white">About Us</a></li>
+            <li class="mt-2"><a href="#" class="text-white">Services</a></li>
+            <li class="mt-2"><a href="#" class="text-white">Projects</a></li>
+            <li class="mt-2"><a href="#" class="text-white">Why Choose Us</a></li>
+            <li class="mt-2"><a href="#" class="text-white">Contact us</a></li>
+          </ul>
+        </div>
+        <!-- Third div: Social media icons and contact info -->
+        <div class="col-md-4 mt-4">
+          <h5 class="fw-bold">Follow Us</h5>
+          <ul class="wrapper social-icons p-0 m-0">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fa-brands fa-facebook-f"></i></span>
+            </li>
+            <li class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fa-brands fa-twitter"></i></span>
+            </li>
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </li>
+            <li class="icon github">
+              <span class="tooltip">whatsapp</span>
+              <span><i class="fa-brands fa-whatsapp"></i></span>
+            </li>
+            <li class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><i class="fab fa-youtube"></i></span>
+            </li>
+          </ul>
+          <div class="footer-contact ">
+          <h5 class="mt-4 fw-bold">Contact Us</h5>
+          <p><i class="fa-solid fa-location-dot fs-5"></i> : 2nd floor, no.492 , RM Complex , Mullai/kurinji Street , New Housing unit , Thanjavur , Tamilnadu-613 005</p>
+          <p><i class="fa-solid fa-envelope fs-5"></i>
+          : universe.mepdesign@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume fs-5"></i> : +91 4362-463868 <br>
+        +91 4362-463868</p>
+          <p><i class="fa-brands fa-whatsapp fs-5"></i> : +91 4362-463868 <br>
+        +91 4362-463868</p>
+      </div>
+        </div>
+      </div>
+  
+      <hr>
+      <p class="text-center rights-text">© 2024 Universe Mep Design & Consultant pvt ltd. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="/scripts.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+  </body>
+</html>
