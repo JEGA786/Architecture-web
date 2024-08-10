@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding: 7rem !important;
   }
   body {
     font-family: "/helvetica",;
@@ -785,7 +787,7 @@ transform: rotate(45deg);
 transition: all 0.7s linear;
 }
 /* / title / */
-.swiper-slide .con .title {
+/* .swiper-slide .con .title {
 position: absolute;
 bottom: 0px;
 padding: 30px 100px 30px 30px;
@@ -866,7 +868,7 @@ color: #fff;
 background: #1b1b1b;
 }
 /* / owl nav / */
-.owl-.swiper-slide.active .swiper-slide .con {
+/* .owl-.swiper-slide.active .swiper-slide .con {
 visibility: visible;
 opacity: 1;
 }
@@ -950,29 +952,29 @@ opacity: 0;
 }
 .owl-theme:hover .owl-nav [class*=owl-] {
 opacity: 1;
-}
+} */ */
 
 
 .swiper-slide {
 position: relative;
 display: block;
 margin-bottom: 20px;
-
+overflow: hidden !important;
 }
 /* / img / */
-.swiper-slide .img {
+.swiper-slide .img img{
 position: relative;
 display: block;
-overflow: hidden;
+overflow: hidden !important;
 z-index: 1;
 border-radius: 20px;
 width: 100%;
-transform: scale(1);
- transition: transform 500ms ease; 
-transition: all 0.5s ease-in-out !important
+/* transform: scale(1);
+ transition: transform 500ms ease-in-out;  */
+transition: all 0.4s ease-in-out !important
 }
-.swiper-slide:hover .img img {
-transform: scale(1.05);
+.swiper-slide:hover .img  img{
+transform: scale(1.08);
 }
 .swiper-slide .con {
 position: relative;
@@ -1132,7 +1134,7 @@ left: 0;
 width: 100%;
 height: 100%;
 overflow: hidden;
-z-index: -1; 
+z-index: -10; 
 }
 
 .video-background-video {
@@ -1143,7 +1145,7 @@ object-fit: cover;
 
 .container {
 position: relative;
-z-index: 1;
+z-index: 10 !important;
 height : 100% ;
 }
 
@@ -1164,6 +1166,7 @@ transition: background-color 0.3s ease;
 .button-1:hover {
 background-color: var(--slightcolor);
 color: var(--black-color);
+cursor: pointer;
 }
 /* --------------------Our Achievements
 ----------------------------------- */
@@ -1411,7 +1414,7 @@ color:var(--primary-color);
 transition: all 0.5s ease-in-out;
 }
 .service-swiper-slide:hover {
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;}
 
 .service-swiper-pagination {
